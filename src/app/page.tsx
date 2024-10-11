@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Page = () => {
+const Page = (): React.JSX.Element => {
   return (
-    <div>Page Hello</div>
+    <div>Page Hello Weronika</div>
   )
 }
 
