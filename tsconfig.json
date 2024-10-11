@@ -31,8 +31,10 @@
     ]
   },
   "include": [
-    "./src/**/*",
-    ".next/types/**/*.ts"
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "vitest.config.ts" 
   ],
   "exclude": [
     "node_modules"
