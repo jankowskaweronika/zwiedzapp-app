@@ -2,7 +2,7 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json", 
+    "project": "./tsconfig.json",
     "tsconfigRootDir": "./",
     "sourceType": "module",
     "ecmaVersion": 2020
@@ -14,17 +14,22 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:storybook/recommended"
   ],
   "rules": {
-    "strict": "error",  
-    "@typescript-eslint/explicit-function-return-type": "error",  
-    "@typescript-eslint/no-explicit-any": "error", 
-    "@typescript-eslint/explicit-module-boundary-types": "error",  
+    "strict": "error",
+    "@typescript-eslint/explicit-function-return-type": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "error",
     "import/order": [
       "error",
       {
-        "groups": ["builtin", "external", "internal"],
+        "groups": [
+          "builtin",
+          "external",
+          "internal"
+        ],
         "newlines-between": "always"
       }
     ]
